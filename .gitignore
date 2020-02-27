@@ -1,0 +1,17 @@
+.DS_STORE
+*.log
+
+.nyc_output/
+**/node_modules/
+rethinkdb_data/
+.eslintcache
+
+/_*
+/nodemon-*.json
+
+reports/coverage/**
+reports/plato/**
+
+.idea/
+
+package-lock.json

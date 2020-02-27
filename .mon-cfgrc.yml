@@ -1,0 +1,30 @@
+user:
+- name: Home Office Laptop
+  monitors:
+  - edid: 00ffffffffffff0006af3d2300000000
+    primary: true
+    scale: 0.75x0.75
+    polybar: top
+  - edid: 00ffffffffffff0006af3d2312345678
+    relative: --left-of $1
+    polybar: top-wide
+- name: Living Room
+  monitors:
+  - edid: 00ffffffffffff0006af3d2300000000
+    primary: true
+    position: 3840x700
+    polybar: top
+  - edid: 00ffffffffffff0010acc0a04c445730
+    scale: 0.8x0.8
+    relative: --left-of $1
+    polybar: top-wide
+    termite: config.large
+defaults:
+- name: small
+  maxWidth: 1920
+  maxHeight: 1080
+  polybar: top
+- name: large
+  minWidth: 1920
+  minHeight: 1080
+  polybar: top-wide
