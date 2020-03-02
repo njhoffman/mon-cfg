@@ -2,10 +2,10 @@
   "name": "mon-cfg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "pkg -t node10-linux index.js -o ./bin/mon-cfg",
-    "dev": "nodemon --config ./nodemon.json index.js",
+    "build": "pkg -t node10-linux ./lib/index.js -o ./bin/mon-cfg",
+    "dev": "nodemon --config ./nodemon.json ./lib/index.js xrandr",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
