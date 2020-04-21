@@ -13,7 +13,7 @@ npm version patch --force
 _CUSTOM_RESOURCES_INNER_PRE_HOOK=1 git push --follow-tags
 echo
 echo " ### npm version bumped and pushed by git hook "
-echo " ### outer push will be canceled, ignore error below "
+echo " ### outer push will be canceled to add modified file, ignore error below "
 echo " "
 exit 1
 
