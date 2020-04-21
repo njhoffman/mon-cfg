@@ -4,7 +4,8 @@ const hooks = {
   // 'pre-commit': tasks(['npm run lint', 'npm run test']),
   // 'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
   'pre-push': tasks([/* 'npm run test',  */ 'npm run todos', '.bin/prePushVersion.sh']),
-  'post-push': tasks(['git push --tags --no-verify', 'npm run lint'])
+  'post-push': tasks(['git push --tags --no-verify', 'npm run lint']),
+  'post-merge': tasks['npm install']
 };
 
 module.exports = { hooks };
