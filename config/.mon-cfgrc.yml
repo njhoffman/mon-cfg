@@ -1,14 +1,22 @@
 user:
-- name: Home Office
+- name: Home Office 3 landscape monitors
   monitors:
-  - edid: 00ffffffffffff0010acc0a04c343530
+  # - description: DP-0 center
+  - edid: 00ffffffffffff0010acbd404c444741
     primary: true
-    polybar: top
-    termite: config
+    polybar: top-wide,bottom-wide
+    termite: config.large
+  # - description: HDMI-0 top right
+  - edid: 00ffffffffffff0010acc0a04c343530
+    scale: 0.75x0.75
+    position: 3840x0
+    polybar: top-wide-alt,bottom-wide
+    termite: config.large
+  # - description: DP-2 bottom right
   - edid: 00ffffffffffff0010acc0a04c445730
-    scale: 0.85x0.85
-    relative: --left-of $1
-    polybar: top-wide
+    scale: 0.75x0.75
+    position: 3840x1620
+    polybar: top-wide-alt,bottom-wide
     termite: config.large
 - name: Home Office Laptop
   monitors:
@@ -18,7 +26,7 @@ user:
     polybar: top
   - edid: 00ffffffffffff0006af3d2312345678
     relative: --left-of $1
-    polybar: top-wide
+    polybar: top-wide,bottom
 - name: Living Room
   monitors:
   - edid: 00ffffffffffff0006af3d2300000000
@@ -36,9 +44,9 @@ defaults:
 - name: small
   maxWidth: 1920
   maxHeight: 1080
-  polybar: top
+  polybar: top,bottom
 - name: large
   minWidth: 1921
   minHeight: 1081
-  polybar: top-wide
+  polybar: top-wide,bottom-wide
   termite: config.large
