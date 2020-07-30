@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "pkg -t node10-linux ./lib/index.js -o ./bin/mon-cfg",
-    "dev": "nodemon --config ./nodemon.json ./lib/index.js xrandr",
+    "dev": "nodemon --config ./nodemon.json ./lib/index.js",
     "start": "node ./lib/index.js",
     "start:xrandr": "node ./lib/index.js xrandr",
     "start:env": "node ./lib/index.js env",
@@ -36,6 +36,7 @@
     "edid-reader": "0.3.6",
     "husky": "^4.2.5",
     "lodash": "4.17.15",
-    "pkg": "4.4.3"
+    "pkg": "4.4.3",
+    "pretty-error": "^2.1.1"
   }
 }
